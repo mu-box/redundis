@@ -11,8 +11,8 @@ import (
 
 	"github.com/garyburd/redigo/redis"
 
-	"github.com/nanopack/redundis/config"
-	"github.com/nanopack/redundis/core"
+	"github.com/mu-box/redundis/config"
+	"github.com/mu-box/redundis/core"
 )
 
 func TestMain(m *testing.M) {

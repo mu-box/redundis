@@ -1,26 +1,27 @@
 // Redundis is a smart, sentinel aware proxy for redis that connects redis
 // clients to the correct master node.
 //
-// Usage
+// # Usage
 //
 // To run as a server, using the defaults, starting redundis is as simple as
-//  redundis
+//
+//	redundis
+//
 // For more specific usage information, refer to the help doc (redundis -h):
 //
-//  Usage:
-//    redundis [flags]
+//	Usage:
+//	  redundis [flags]
 //
-//  Flags:
-//    -c, --config-file="": Config file location for redundis
-//    -l, --listen-address="127.0.0.1:6379": Redundis listen address
-//    -L, --log-level="info": Log level [fatal, error, info, debug, trace]
-//    -t, --master-wait=30: Time to wait for node to transition to master (seconds)
-//    -m, --monitor-name="test": Name of sentinel monitor
-//    -r, --ready-wait=30: Time to wait to connect to redis|sentinel (seconds)
-//    -s, --sentinel-address="127.0.0.1:26379": Address of sentinel node
-//    -p, --sentinel-password="": Sentinel password
-//    -w, --sentinel-wait=10: Time to wait for sentinel to respond (seconds)
-//
+//	Flags:
+//	  -c, --config-file="": Config file location for redundis
+//	  -l, --listen-address="127.0.0.1:6379": Redundis listen address
+//	  -L, --log-level="info": Log level [fatal, error, info, debug, trace]
+//	  -t, --master-wait=30: Time to wait for node to transition to master (seconds)
+//	  -m, --monitor-name="test": Name of sentinel monitor
+//	  -r, --ready-wait=30: Time to wait to connect to redis|sentinel (seconds)
+//	  -s, --sentinel-address="127.0.0.1:26379": Address of sentinel node
+//	  -p, --sentinel-password="": Sentinel password
+//	  -w, --sentinel-wait=10: Time to wait for sentinel to respond (seconds)
 package main
 
 import (
@@ -29,8 +30,8 @@ import (
 	"github.com/jcelliott/lumber"
 	"github.com/spf13/cobra"
 
-	"github.com/nanopack/redundis/config"
-	"github.com/nanopack/redundis/core"
+	"github.com/mu-box/redundis/config"
+	redundis "github.com/mu-box/redundis/core"
 )
 
 var (

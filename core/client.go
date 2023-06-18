@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/nanopack/redundis/config"
+	"github.com/mu-box/redundis/config"
 )
 
 // dial continuously tries connecting to a remote for 10 seconds

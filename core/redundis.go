@@ -11,7 +11,7 @@ import (
 
 	"github.com/garyburd/redigo/redis"
 
-	"github.com/nanopack/redundis/config"
+	"github.com/mu-box/redundis/config"
 )
 
 var (

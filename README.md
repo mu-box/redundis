@@ -1,6 +1,6 @@
-[![redundis logo](http://nano-assets.gopagoda.io/readme-headers/redundis.png)](http://nanobox.io/open-source#redundis)  
-[![Build Status](https://travis-ci.org/nanopack/redundis.svg)](https://travis-ci.org/nanopack/redundis)
-[![GoDoc](https://godoc.org/github.com/nanopack/redundis?status.svg)](https://godoc.org/github.com/nanopack/redundis)
+[![redundis logo](http://microbox.rocks/assets/readme-headers/redundis.png)](http://microbox.cloud/open-source#redundis)
+[![Build Status](https://github.com/mu-box/redundis/actions/workflows/ci.yaml/badge.svg)](https://github.com/mu-box/redundis/actions)
+[![GoDoc](https://godoc.org/github.com/mu-box/redundis?status.svg)](https://godoc.org/github.com/mu-box/redundis)
 
 # Redundis
 
@@ -81,4 +81,4 @@ Currently, only connecting to one sentinel is supported. It could be extended in
 
 - Handle network partitions
 
-[![redundis logo](http://nano-assets.gopagoda.io/open-src/nanobox-open-src.png)](http://nanobox.io/open-source)
+[![redundis logo](http://microbox.rocks/assets/open-src/microbox-open-src.png)](http://microbox.cloud/open-source)

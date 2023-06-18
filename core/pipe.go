@@ -5,7 +5,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/nanopack/redundis/config"
+	"github.com/mu-box/redundis/config"
 )
 
 // pipe connects the reader to the writer and closes both instances (all io.Copy()s)
@@ -34,8 +34,9 @@ func pipe(writer, reader *net.Conn, label string) {
 // disconnect, we prevent a possible DOS by ending the `dial()` function's
 // ability to redial.
 //
-//  go pipe(&cli, srv, "User")
-//  pipe(srv, &cli, "Endpoint")
+//	go pipe(&cli, srv, "User")
+//	pipe(srv, &cli, "Endpoint")
+//
 // would be sufficient (following dial()) if we weren't concerned by the
 // extra connection attempts made by dial.
 func handleConnection(srv *net.Conn) {
